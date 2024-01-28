@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Legacy\Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../Icon.png" Link="Assets\Icon.png">  
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+  	<None Include="../../Readme.md" Link="Assets\Readme.md">
+  	  <Pack>True</Pack>
+  	  <PackagePath>\</PackagePath>
+  	</None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Revrs" Version="1.0.1" />
+    <PackageReference Include="SharpYaml" Version="2.1.0" />
+    <PackageReference Include="Syroot.BinaryData" Version="5.2.2" />
+    <PackageReference Include="Syroot.Maths" Version="1.5.3" />
+  </ItemGroup>
+
+</Project>
